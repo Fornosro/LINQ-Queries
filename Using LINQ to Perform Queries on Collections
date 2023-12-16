@@ -1,0 +1,19 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        // LINQ query to find even numbers greater than 5
+        var result = numbers.Where(n => n % 2 == 0 && n > 5);
+
+        foreach (var num in result)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}
